@@ -1,53 +1,94 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap"
-        rel="stylesheet">
-    <title>Guiminamflix</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samuka flix - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>GUIMINAMFLIX</header>
-
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>AVATAR: CAMINHO DA ÁGUA</h1>
-            <p>#avatar</p>
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>samuel flix</h1>
+        <p>Olá! Bem-vindo ao abacate flix, o seu espaço para descobrir e se apaixonar por filmes e séries incríveis!</p>
+        <p>Explore nossos conteúdos e aproveite cada momento de entretenimento.</p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e séries..." onkeyup="searchMovies()">
+    </header>
+    
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>otimos filmes</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <a href="link_filme1.html">
+                    <img src="https://br.web.img2.acsta.net/pictures/18/08/23/18/05/0791719.jpg" alt="Poster de Fantástica">
+                    <h3>Fantástica</h3>
+                </a>
+                <p>Aventura, Ação</p>
+                <p>2023</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <a href="link_filme2.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq-efe6ok-BDX5MDtYzPg8MsgCM6rFrunrUTJ1mcuf58Zngk4S" alt="Poster de Outer Banks">
+                    <h3>Outer Banks</h3>
+                </a>
+                <p>Drama,Suspense</p>
+                <p>serie temporada 1</p>
+            </div>
+            <!-- Card da Série 1 -->
+            <div class="movie-item">
+                <a href="link_serie1.html">
+                    <img src="https://br.web.img3.acsta.net/pictures/20/01/28/22/11/0608065.jpg" alt="Poster de bad boys 3">
+                    <h3>bad boys 3</h3>
+                </a>
+                <p>Comédia</p>
+                <p>2020</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <a href="link_filme3.html">
+                    <img src="https://br.web.img3.acsta.net/pictures/18/02/27/19/16/0695165.jpg" alt="Poster de jogador n 1">
+                    <h3>jogador n 1</h3>
+                </a>
+                <p>Ficção Científica</p>
+                <p>2024</p>
+            </div>
+            <!-- Card do Filme 4 -->
+            <div class="movie-item">
+                <a href="link_filme4.html">
+                    <img src="https://br.web.img3.acsta.net/pictures/21/10/13/21/56/4755833.jpg" alt="Poster de Pânico">
+                    <h3>Pânico</h3>
+                </a>
+                <p>Terror, Suspense</p>
+                <p>2022</p>
+            </div>
+            <!-- Card do Filme 5 -->
+            <div class="movie-item">
+                <a href="link_filme5.html">
+                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/92/03/73/20176438.jpg" alt="Poster de Up - Altas Aventuras">
+                    <h3>A Jornada do Herói</h3>
+                </a>
+                <p>Up - Altas Aventuras</p>
+                <p>2009</p>
+            </div>
         </div>
-
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/d9MyW72ELq0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section class="categoria">
-        <h2>Filmes e séries</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=k6wV7cL17Dw">
-                <img src="https://img.youtube.com/vi/k6wV7cL17Dw/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=1VIZ89FEjYI">
-                <img src="https://img.youtube.com/vi/1VIZ89FEjYI/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=8ugQq5m4SxE">
-                <img src="https://img.youtube.com/vi/8ugQq5m4SxE/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=VzNJVSsjE-I">
-                <img src="https://img.youtube.com/vi/VzNJVSsjE-I/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=ue80QwXMRHg">
-                <img src="https://img.youtube.com/vi/ue80QwXMRHg/maxresdefault.jpg" />
-            </a>
-        </div>
-    </section>
-
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 samuel flix. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
